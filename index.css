@@ -30,9 +30,7 @@ body{
     position: absolute;
     height: 60px;
     width: 60px;
-    background: #8505595e;
-    -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
-    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+    background: #8505595e; 
     z-index: -1;
   }
   @keyframes gradient {
