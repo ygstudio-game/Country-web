@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Country's Information</title>
+   <!-- <style>
+        body {
+          background-image: url('https://media.istockphoto.com/id/842096920/photo/abstract-blue-halftone-background.jpg?b=1&s=170667a&w=0&k=20&c=XzYxn52wYyndA551ihgKnfiwkKMdbKk-NqIQywtutUM=');
+          background-repeat: no-repeat;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
+        </style>  -->
+        <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="background"> 
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 hover">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png" style="height:10vw">
+            </svg>
+            <span class="ml-3 text-xl">Country's Information</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html"class="mr-5 hover:text-grey-900 hover" style="font-size: x-large;">Home</a>
+            <a href="aboutus.html"class="mr-5 hover:text-gray-900 hover" style="font-size: x-large;">About us</a>
+            <a href="contactus.html"class="mr-5 hover:text-gray-900 hover" style="font-size: x-large;">Contact us</a>
+            <a href=""class="mr-5 hover:text-gray-900 hover" style="font-size: x-large;">Instagram</a>
+          </nav>
+        </div>
+      </header>
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Country's in the World
+              <br class="hidden lg:inline-block">Explore and get Information
+            </h1>
+            <p class="mb-8 leading-relaxed">There are 195 countries in the world today. This total comprises 193 countries that are member states of the United Nations and 2 countries that are non-member observer states: the Holy See and the State of Palestine.Get Information through this website.</p>
+            <div class="flex justify-center">
+              <a href="information.html"><button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Click here to get Information</button></a>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Flag_map_of_the_world.svg/800px-Flag_map_of_the_world.svg.png?20230106010038">
+          </div>
+        </div>
+      </section>
+    </div>
+      <script>
+        const background = document.querySelector(".background");
+for (var i = 0; i <= 100; i++) {
+  const blocks = document.createElement("div");
+  blocks.classList.add("block");
+  background.appendChild(blocks);
+}
+
+let animateBlocks = () => {
+  anime({
+    targets: ".block",
+    translateX: () => {
+      return anime.random(-700, 700);
+    },
+    translateY: () => {
+      return anime.random(-500, 500);
+    },
+    scale: () => {
+      return anime.random(1, 5);
+    },
+
+    easing: "linear",
+    duration: 3000,
+    delay: anime.stagger(10),
+    complete: animateBlocks
+  });
+};
+animateBlocks();
+
+      </script>
+</body>
+</html>

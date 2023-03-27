@@ -1,0 +1,64 @@
+body{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(143,41,212,1) 0%, rgba(226,35,71,1) 39%, rgba(249,21,21,1) 59%, rgba(212,155,122,1) 99%);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+ }
+::selection{
+    background-color: #0f0 !important;
+    color: black !important;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .block {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: #8505595e;
+    -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a.hover {
+    position: relative;
+     color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(7,209,85,1) 38%, rgba(95,7,209,1) 79%, rgb(175, 81, 238) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position:90% 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+  }
+  a.hover:hover {
+    background-position: 0 100%;
+  }
