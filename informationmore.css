@@ -11,7 +11,7 @@
     perspective: 100px;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: clip;
+    overflow-y: auto;
     position: absolute;
     top: 0;
     left: 50%;
@@ -78,16 +78,17 @@
     color: rgb(169, 178, 224);
   }
   section{
-    position: relative;
-    top: 45vh;
+    position: absolute; 
+    background: #2D112B;
+    left: 45vw; 
     z-index: 3;
     background: #2D112B;
   }
   h1{
     color: wheat;
-  }
-  .s1{
-    top: 0;
-    background: none;
-    z-index: 1;
+  } 
+  section > div > img{
+    position: fixed;
+    top: 15vh;
+    width: 30vw !important;
   }
