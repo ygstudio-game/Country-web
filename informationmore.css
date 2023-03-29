@@ -1,94 +1,147 @@
 * {
-    box-sizing: border-box;
+  transition: all 420ms ease-in-out !important;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #0f0 !important;
+  color: black !important;
+}
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/play-pause.css");
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/play-button.css");
+html,
+body {
+  background-color: #fedcc8;
+}
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -78.125vw;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax__cover {
+  background: #2d112b;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+}
+
+.parallax__layer__0 {
+  transform: translateZ(-300px) scale(4);
+}
+
+.parallax__layer__1 {
+  transform: translateZ(-250px) scale(3.5);
+}
+
+.parallax__layer__2 {
+  transform: translateZ(-200px) scale(3);
+}
+
+.parallax__layer__3 {
+  transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+  transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+  transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__6 {
+  transform: translateZ(0px) scale(1);
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: rgb(169, 178, 224);
+  text-align: justify;
+}
+section {
+  position: absolute;
+  background: #2d112b;
+  left: 45vw;
+  z-index: 3;
+  background: #2d112b;
+}
+h1 {
+  color: #0f0;
+  letter-spacing: 0.625vw;
+}
+section > div > img {
+  position: fixed;
+  top: 15vh;
+  width: 30vw !important;
+}
+@media only screen and (max-width: 768px) {
+  section {
+    left: 30vw;
   }
-  
-  html,
-  body {
-    background-color: #FEDCC8;
+  section p {
+    font-size: 0.96rem;
   }
-  
-  .parallax {
-    perspective: 100px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    margin-left: -1500px;
-  }
-  
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .parallax__layer img {
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .parallax__cover {
-    background: #2D112B;
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    height: 2000px;
-    z-index: 2;
-  }
-  
-  .parallax__layer__0 {
-    transform: translateZ(-300px) scale(4);
-  }
-  
-  .parallax__layer__1 {
-    transform: translateZ(-250px) scale(3.5);
-  }
-  
-  .parallax__layer__2 {
-    transform: translateZ(-200px) scale(3);
-  }
-  
-  .parallax__layer__3 {
-    transform: translateZ(-150px) scale(2.5);
-  }
-  
-  .parallax__layer__4 {
-    transform: translateZ(-100px) scale(2);
-  }
-  
-  .parallax__layer__5 {
-    transform: translateZ(-50px) scale(1.5);
-  }
-  
-  .parallax__layer__6 {
-    transform: translateZ(0px) scale(1);
-  }
-    
-  p{
-    font-weight: 300;
-    font-size: 1.05vw;
-    color: rgb(169, 178, 224);
-  }
-  section{
-    position: absolute; 
-    background: #2D112B;
-    left: 45vw; 
-    z-index: 3;
-    background: #2D112B;
-  }
-  h1{
-    color: wheat;
-  } 
-  section > div > img{
-    position: fixed;
-    top: 15vh;
-    width: 30vw !important;
-  }
+}
+mark {
+  color: #0f0;
+  background-color: #810a02;
+}
+.wrapper {
+  width: 31.25vw;
+  margin: auto;
+  background-color: #0003;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 5px !important;
+  border: 1px solid #fff !important;
+  border-radius: 0.4vw !important;
+  color: #fff;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  color: #fff !important;
+  background: linear-gradient(-45deg, #f4d03f, #16a085) !important;
+}
+button:hover {
+  color: #cf000f !important;
+  letter-spacing: 2px;
+}
+
+button:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
