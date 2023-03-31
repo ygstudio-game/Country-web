@@ -328,5 +328,5 @@ body {
   filter: blur(30px);
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom,1.6vh) !important;
+  bottom: var(--swiper-pagination-bottom,-1.4vh) !important;
 }

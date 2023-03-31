@@ -323,32 +323,32 @@
     </div>
   </body>
   <script>
-    const background = document.querySelector(".background");
+    // const background = document.querySelector(".background");
     // for (var i = 0; i <= 100; i++) {
     //   const blocks = document.createElement("div");
     //   blocks.classList.add("block");
     //   background.appendChild(blocks);
     // }
 
-    let animateBlocks = () => {
-      anime({
-        targets: ".block",
-        translateX: () => {
-          return anime.random(-700, 700);
-        },
-        translateY: () => {
-          return anime.random(-500, 500);
-        },
-        scale: () => {
-          return anime.random(1, 5);
-        },
+    // let animateBlocks = () => {
+    //   anime({
+    //     targets: ".block",
+    //     translateX: () => {
+    //       return anime.random(-700, 700);
+    //     },
+    //     translateY: () => {
+    //       return anime.random(-500, 500);
+    //     },
+    //     scale: () => {
+    //       return anime.random(1, 5);
+    //     },
 
-        easing: "linear",
-        duration: 3000,
-        delay: anime.stagger(10),
-        complete: animateBlocks,
-      });
-    };
+    //     easing: "linear",
+    //     duration: 3000,
+    //     delay: anime.stagger(10),
+    //     complete: animateBlocks,
+    //   });
+    // };
     // animateBlocks();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
