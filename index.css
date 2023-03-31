@@ -1,15 +1,7 @@
 body {
   position: relative;
   overflow-x: hidden;
-  background: linear-gradient(
-    to right,
-    #6f7280,
-    #2a2c3c,
-    #181827,
-    #833ab4,
-    #fd1d1d,
-    #fcb045
-  );
+
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
   display: -webkit-box;
