@@ -290,7 +290,7 @@ body {
 @media only screen and (max-width: 768px) {
   .mySwiper {
     width: 90vw;
-    height: 85vh;
+    height: 82vh;
   }
 }
 .swiper-pagination-bullet-active{
@@ -330,10 +330,6 @@ body {
   filter: blur(30px);
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom,-1.4vh) !important;
+  bottom: var(--swiper-pagination-bottom,8px) ;
 }
-@media (max-width: 1024px) {
-.card{
-  margin-bottom:0.2vh;
-}
-}
+
