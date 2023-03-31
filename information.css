@@ -28,6 +28,8 @@ body {
 .card {
   position: relative;
   border-radius: inherit;
+  max-width:100%;
+  max-height:100%
 }
 
 .card .card-media {
@@ -288,7 +290,7 @@ body {
 @media only screen and (max-width: 768px) {
   .mySwiper {
     width: 90vw;
-    height: 80vh;
+    height: 85vh;
   }
 }
 .swiper-pagination-bullet-active{
