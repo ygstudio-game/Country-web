@@ -288,7 +288,7 @@ body {
 @media only screen and (max-width: 768px) {
   .mySwiper {
     width: 90vw;
-    height: 62vh;
+    height: 72vh;
   }
 }
 .swiper-pagination-bullet-active{
