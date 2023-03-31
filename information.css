@@ -334,6 +334,6 @@ body {
 }
 @media (max-width: 1024px) {
 .card{
-  margin-bottom:2vh;
+  margin-bottom:0.2vh;
 }
 }
